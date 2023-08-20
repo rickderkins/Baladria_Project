@@ -54,7 +54,7 @@ def plot_graph(data, named_entity):
     plt.title(f'Frequency of "{named_entity}" Over Years')
     plt.xlabel('Year')
     plt.ylabel('Frequency')
-    plt.xticks(years)
+    plt.xticks(years, rotation=90)  # Rotate x-axis labels vertically
     plt.grid(True)
 
     # Add y-value labels next to each point
